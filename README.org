@@ -10,7 +10,8 @@ cat 'some#/hash#/path#/mykeyK'
 
 Hashes are systematically appended the '#' character.
 Keys are systematically appended the 'K' character.
-** TODO be able to remove keys/hashes
+** TODO TODO
+- be able to remove keys/hashes
 ** Usage
 *** Add a value
 This is done using the =configure= function.
