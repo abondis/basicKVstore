@@ -7,5 +7,5 @@ setup(name='BasicKVStore',
       description='Basic KV store',
       author='A. Bondis',
       author_email='abondis@kerunix.com',
-      packages=[''],
+      packages=['basicKVstore'],
 )
