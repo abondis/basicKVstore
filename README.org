@@ -1,0 +1,31 @@
+* Basic Key Value store
+This is a basic Key-Value store library.
+
+It uses folders as a hash, files as keys and files contents as values.
+
+#+BEGIN_SRC sh
+cat 'some#/hash#/path#/mykeyK'
+>> this is the value of mykey
+#+END_SRC
+
+Hashes are systematically appended the '#' character.
+Keys are systematically appended the 'K' character.
+** TODO be able to remove keys/hashes
+** Usage
+*** Add a value
+This is done using the =configure= function.
+
+This will add the key =myKey= to the hash =this/is/a/hash= under the folder =/tmp/test=.
+
+It sets the =myKey='s value to =some value=
+#+BEGIN_SRC python
+kv.configure('/tmp/test', 'this/is/a/hash', 'myKey', 'some value')
+#+END_SRC
+
+*** Get a key's value
+=get_config= function.
+
+#+BEGIN_SRC python
+kv.get_config('/tmp/test', 'this/is/a/hash', 'myKey')
+>>> 'some value'
+#+END_SRC
